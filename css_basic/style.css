@@ -11,10 +11,46 @@ main {
 
 article {
   flex: 2;
-  overflow-y: auto;
+  border-right: 1px solid #ddd;
 }
 
 aside {
   flex: 1;
-  overflow-y: auto;
+}
+
+h1 {
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  padding: 20px;
+}
+
+section {
+  border: 2px soild red;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+section h3 {
+  color: blueviolet;
+}
+
+p {
+  display: block;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+footer {
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+footer p {
+  color: white;
+  display: block;
+  text-align: center;
 }
