@@ -1,0 +1,115 @@
+
+/* قواعد عمومية */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth; /*  للنتقال الي اجزاء الصفحه*/
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+header  {
+    margin: 30px auto;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    color: white;
+}
+
+/*.landing div {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*   */
+/*}*/
+
+body {
+    /* ضبط الخلفية والخطوط العامة للصفحة */
+    background-color: #071221;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif; /* استخدم خطًا مشابهًا أو قم بتضمين الخط الأصلي */
+    margin: 0;
+}
+
+.landing {
+    /* تنسيق قسم الهبوط الرئيسي */
+    background-image: url('./image/Object.png'); /* تأكد من أن مسار الصورة صحيح */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 150px; /* مسافة علوية لتوفير مساحة للعنوان */
+    padding-bottom: 50px;
+}
+
+/* تنسيق قسم الاقتباس */
+section:last-of-type {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #C271FF;
+    color: #ffffff;
+}
+
+section:last-of-type img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+section:last-of-type blockquote {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+section:last-of-type h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+section:last-of-type p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+
