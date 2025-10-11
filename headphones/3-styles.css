@@ -243,8 +243,8 @@ main .container button:hover {
 }
 
 main .container .content {
-        margin: 150px 0 ;
-      max-width: 650px;
+    margin: 150px 0 ;
+    max-width: 650px;
 }
 
 /*hero section end */
@@ -365,7 +365,145 @@ main .container .content {
 
 /*result section end */
 
-/*from section start */
+/*start contact section */
 
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+
+}
+
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .container .contact-title {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact .container #form {
+    text-align: -webkit-center;
+}
+
+.contact .container #form .input:not(:last-child) {
+    display: flex;
+    flex: 1;
+    height: 75px;
+    border: none;
+    width: 350px;
+    padding: 20px;
+    outline: none;
+    border-bottom: solid 1px #979797;
+}
+
+.contact .container #form #submit {
+    /*padding: 5px 20px ;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    width: 160px;
+    height: 45px;
+
+    background-color: var(--main-color);
+    transition: opacity 0.3s;
+    font-size: 14px;
+
+}
+
+.contact .container #form #submit:hover {
+    opacity: 0.9;
+}
+
+.contact .container #form .text-input {
+    height: 75px;
+    border: none;
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 30px;
+    outline: none;
+    border-bottom: solid 1px #071629;
+    color: purple;
+}
+
+/*start footer */
+
+.footer {
+    background-color: #071426; /* نفس اللون الداكن في الصورة */
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo img {
+    height: 35px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    flex: 1;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff4c4c; /* لون أحمر بسيط عند الـ hover */
+}
+
+/* ✅ جعل الفوتر متجاوب في الموبايل */
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer p {
+        order: 3;
+    }
+
+    .social-media {
+        order: 2;
+    }
+
+    .footer-logo {
+        order: 1;
+    }
+}
 
 
