@@ -1,3 +1,4 @@
+
 :root {
     --main-color: #FF6565;
     --hover-opacity: 0.9;
@@ -64,19 +65,22 @@ body {
     text-decoration: none;
     justify-content: space-evenly;
 
+
 }
 
 .header ul li {
     list-style: none;
+    outline: none;
 }
 
 
 .header ul li a {
     color:white;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 20px 5px;
     font-weight: 600;
     transition: color 0.3s;
+    border: none;
 
 }
 
@@ -85,9 +89,6 @@ body {
 }
 
 
-@media(max-width: 480px) {
-
-}
 
 /*start mega menuo  here */
 /*header section end  */
@@ -156,3 +157,8 @@ main .container .content {
 
 /*hero section end */
 
+i {
+    display: block;
+    font-size: 50px;
+    color: white;
+}

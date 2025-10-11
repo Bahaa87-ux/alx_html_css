@@ -26,3 +26,7 @@ section => footer and linkes for media
  width: 150px;
  object-fit:contain;
  }
+
+
+================================
+in serves section i used grid system 
