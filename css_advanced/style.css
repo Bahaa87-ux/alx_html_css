@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    /*position absolute علشان يكون فوق العنصر الاساسي*/
+    position: absolute;
+    width: 100%;
+    padding: 20px 60px;
+    color: white;
+    top: 0;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav .logo {
+    height: 30px;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+header nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 3rem;
+    background-image: url("image/Object.png");
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    background-position: center;
+}
+
+.banner .main-title {
+    max-width: 100%;
+    margin-bottom: 4rem;
+
+}
+
+.banner .main-title h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.banner .main-title span {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1.5rem 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+.banner .main-title .btn {
+    background-color: #c271ff;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    transition:all 0.3s;
+    border: none    ;
+    box-shadow: 0 8px 12px rgb(0,0,0,0.2);
+    margin-top: 1.5rem;
+}
+
+.banner .main-title .btn:hover {
+    background-color: #e55b00;
+    cursor: pointer;
+}
+
+.banner > div:last-child {
+    width: 100%;
+}
+
+.banner > div:last-child .users {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.banner > div:last-child h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.banner > div:last-child h2 span {
+    color: #c271ff;
+}
+
+
+.banner > div:last-child > div > div {
+    padding: 2rem;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.banner > div:last-child > div > div:hover {
+    transform: translateY(-5px);
+}
+
+.banner > div:last-child > div > div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.banner > div:last-child > div > div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner > div:last-child > div > div p {
+    font-size: 0.9rem;
+}
+
+/* Quote Section */
+
+.quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+    background-color: #c271ff;
+    gap: 3rem;
+
+}
+
+.quotes > div:first-child img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.quotes > div:last-child {
+    max-width: 600px;
+}
+
+.quotes blockquote {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.quotes h3 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.quotes p {
+    font-size: 0.9rem;
+    color: white;
+
+}
+
+/* Most Popular Tutorials Section */
+.videos {
+    padding: 5rem 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 3rem;
+}
+.videos h2 span {
+    color: mediumpurple;
+}
+
+.videos > div {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 280px;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s;
+    vertical-align: top;
+}
+
+.videos > div:hover {
+    transform: translateY(-5px);
+}
+
+.videos > div > img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.videos > div > h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.videos > div > p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.videos > div > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.videos > div > div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+.videos > div > div h4 {
+    font-size: 1rem;
+    color: #c271ff;
+}
+
+.videos > div > div:nth-child(5) {
+    justify-content: space-between;
+}
+
+.videos > div > div:nth-child(5) > div {
+    display: inline-block;
+}
+
+.videos > div > div:nth-child(5) i {
+    color: #c271ff;
+    font-size: 1rem;
+}
+
+.videos > div > p:last-child {
+    font-size: 0.9rem;
+    color: #c271ff;
+    text-align: right;
+}
+
+/* Free Membership Section */
+main > section:nth-child(4) {
+    padding: 5rem 3rem;
+    background-color: black;
+    text-align: center;
+}
+
+main > section:nth-child(4) h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+main > section:nth-child(4) h2 span {
+    color: mediumpurple;
+}
+main > section:nth-child(4) > div {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    vertical-align: top;
+}
+
+main > section:nth-child(4) > div:hover {
+    transform: translateY(-5px);
+}
+
+main > section:nth-child(4) > div img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(4) > div h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+main > section:nth-child(4) > div p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+main > section:nth-child(4) button {
+    padding: 0.8rem 2rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2rem;
+}
+
+main > section:nth-child(4) button:hover {
+    background-color: #e55b00;
+}
+
+/* FAQ Section */
+main > section:nth-child(5) {
+    padding: 5rem 3rem;
+    background-color: #f9f9f9;
+}
+
+main > section:nth-child(5) h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+
+main > section:nth-child(5) > div {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(5) > div > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+main > section:nth-child(5) > div > div > div:nth-child(odd) {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+main > section:nth-child(5) > div > div > div:nth-child(odd) h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+main > section:nth-child(5) > div > div > div:nth-child(even) {
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    padding: 3rem;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer section > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer section > div img {
+    height: 40px;
+}
+
+footer section > div > div {
+    display: flex;
+    gap: 1rem;
+}
+
+footer section > div i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+footer section > div i:hover {
+    color: #ff6600;
+}
+
+footer p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner .main-title h1 {
+        font-size: 2rem;
+    }
+
+    main > section:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main > section:nth-child(5) > div {
+        flex-direction: column;
+    }
+
+    footer section {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
