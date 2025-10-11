@@ -14,3 +14,15 @@ section 3 =>
 Section 4 => form 
 
 section => footer and linkes for media 
+
+
+============ notes ================
+
+    /* flex auto =>*/  علشان تاخد المساحه الموجوده داخل الكونتينر من غيرها المحتوي هياخد مساحته هو بس 
+
+
+ => .header img {  المحدد دا اشتغل لكن =>  .logo  img      مشتغلش  ؟؟؟؟؟؟؟؟؟؟
+ height: auto;
+ width: 150px;
+ object-fit:contain;
+ }
